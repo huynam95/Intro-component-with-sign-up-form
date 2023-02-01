@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Frontend Mentor | Intro component with sign up form</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- FONT -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- SCRIPT -->
+    <script defer src="script.js"></script>
+  </head>
+  <body>
+    <main class="container">
+      <!-- TEXT -->
+      <div class="left">
+        <h1 class="heading">Learn to code by watching others</h1>
+
+        <p class="text">
+          See how experienced developers solve problems in real-time. Watching
+          scripted tutorials is great, but understanding how developers think is
+          invaluable.
+        </p>
+      </div>
+      <!-- TEXT -->
+
+      <!-- INPUT FORM -->
+      <div class="right">
+        <div class="try-free">
+          <p class="try-free-text">
+            Try it free 7 days
+            <span>then $20/mo. thereafter</span>
+          </p>
+        </div>
+
+        <div class="input-box">
+          <form
+            class="form"
+            name="sign-up"
+            netlify
+            novalidate
+            autocomplete="off"
+          >
+            <fieldset class="input">
+              <legend class="visually-hidden">
+                Please enter your information
+              </legend>
+
+              <div class="input-state">
+                <input
+                  class="first-name-input"
+                  type="text"
+                  placeholder="First name"
+                  name="first-name"
+                  required
+                />
+
+                <img
+                  class="error-first-name hidden"
+                  src="images/icon-error.svg"
+                  alt="Error icon"
+                />
+
+                <p class="error-text error-text-first-name hidden">
+                  First Name cannot be empty
+                </p>
+              </div>
+
+              <div class="input-state">
+                <input
+                  class="last-name-input"
+                  type="text"
+                  placeholder="Last name"
+                  name="last-name"
+                  required
+                />
+
+                <img
+                  class="error-last-name hidden"
+                  src="images/icon-error.svg"
+                  alt="Error icon"
+                />
+
+                <p class="error-text error-text-last-name hidden">
+                  Last Name cannot be empty
+                </p>
+              </div>
+
+              <div class="input-state">
+                <input
+                  class="email-input"
+                  type="email"
+                  placeholder="Email Address"
+                  name="email"
+                  required
+                />
+
+                <img
+                  class="error-email hidden"
+                  src="images/icon-error.svg"
+                  alt="Error icon"
+                />
+
+                <p class="error-text error-text-email hidden">
+                  Looks like this is not an email
+                </p>
+              </div>
+
+              <div class="input-state">
+                <input
+                  class="password-input"
+                  type="password"
+                  placeholder="Password"
+                  name="password"
+                  required
+                />
+
+                <img
+                  class="error-password hidden"
+                  src="images/icon-error.svg"
+                  alt="Error icon"
+                />
+
+                <p class="error-text error-text-password hidden">
+                  Password cannot be empty
+                </p>
+              </div>
+
+              <button class="btn">Claim your free trial</button>
+
+              <p class="warning-text">
+                By clicking the button, you are agreeing to our
+                <span> Terms and Services</span>
+              </p>
+            </fieldset>
+          </form>
+        </div>
+        <!-- INPUT FORM -->
+      </div>
+    </main>
+  </body>
+</html>
