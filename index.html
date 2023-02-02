@@ -21,6 +21,15 @@
     <script defer src="script.js"></script>
   </head>
   <body>
+    <div class="sign-up-success hidden">
+      <p class="thank">Thank you</p>
+      <p class="success">Your form submission has been received.</p>
+
+      <button class="btn-back">Back to out site</button>
+    </div>
+
+    <div class="overlay hidden"></div>
+
     <main class="container">
       <!-- TEXT -->
       <div class="left">
@@ -136,11 +145,11 @@
                 </p>
               </div>
 
-              <button class="btn">Claim your free trial</button>
+              <button class="btn" type="submit">Claim your free trial</button>
 
               <p class="warning-text">
                 By clicking the button, you are agreeing to our
-                <span> Terms and Services</span>
+                <a href="#"> Terms and Services</a>
               </p>
             </fieldset>
           </form>

@@ -182,6 +182,19 @@ select {
   color: #fff;
   border-radius: 9px;
   box-shadow: 0 calc(4rem / 16) rgba(43, 155, 106, 0.739);
+
+  transition: all 0.5s;
+}
+
+.btn:hover {
+  scale: 1.02 1;
+  background-color: hsl(154, 59%, 45%);
+  box-shadow: 0 calc(4rem / 16) rgb(43, 155, 106);
+}
+
+.btn:active {
+  transform: translateY(3px);
+  background-color: hsla(154, 59%, 51%, 0.792);
 }
 
 .warning-text {
@@ -191,10 +204,18 @@ select {
   color: hsl(246, 25%, 77%);
 }
 
-.warning-text span {
+.warning-text a {
   font-weight: 700;
 
   color: hsl(0, 100%, 74%);
+
+  transition: all 0.4s;
+}
+
+.warning-text a:hover {
+  font-weight: 700;
+
+  color: hsla(0, 100%, 74%, 0.692);
 }
 
 /* ABSOLUTE */
@@ -216,6 +237,61 @@ select {
   text-align: end;
 
   color: hsl(0, 100%, 74%);
+}
+
+.sign-up-success {
+  position: absolute;
+
+  padding: calc(32rem / 16);
+
+  width: calc(440rem / 16);
+  height: calc(140rem / 16);
+
+  background-color: #fff;
+  color: hsl(249, 10%, 26%);
+  border-radius: 9px;
+
+  z-index: 3;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(3px);
+  z-index: 2;
+}
+
+.thank {
+  margin-bottom: calc(18rem / 16);
+
+  font-size: calc(20rem / 16);
+  font-weight: 500;
+}
+
+.success {
+  margin-bottom: calc(24rem / 16);
+
+  font-size: calc(13rem / 16);
+  color: hsla(249, 10%, 26%, 0.68);
+}
+
+.btn-back {
+  background: none;
+  cursor: pointer;
+
+  font-size: calc(13rem / 16);
+  font-weight: 500;
+  color: hsl(154, 59%, 51%);
+
+  transition: all 0.4s;
+}
+
+.btn-back:hover {
+  color: hsla(249, 10%, 26%, 0.427);
 }
 
 /* HIDDEN */

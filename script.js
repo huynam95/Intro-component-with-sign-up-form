@@ -1,5 +1,9 @@
 const formEl = document.querySelector(".form");
 
+const signUpSuc = document.querySelector(".sign-up-success");
+const overlay = document.querySelector(".overlay");
+const btnBack = document.querySelector(".btn-back");
+
 const firstNameEl = document.querySelector(".first-name-input");
 const lastNameEl = document.querySelector(".last-name-input");
 const emailEl = document.querySelector(".email-input");
@@ -83,7 +87,20 @@ formEl.addEventListener("submit", function (e) {
     lastNameEl.value = "";
     emailEl.value = "";
     passwordEl.value = "";
+
+    signUpSuc.classList.remove("hidden");
+    overlay.classList.remove("hidden");
   }
 
   return valid;
+});
+
+btnBack.addEventListener("click", function (e) {
+  signUpSuc.classList.add("hidden");
+  overlay.classList.add("hidden");
+});
+
+overlay.addEventListener("click", function (e) {
+  signUpSuc.classList.add("hidden");
+  overlay.classList.add("hidden");
 });
