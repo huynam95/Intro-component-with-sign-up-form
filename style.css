@@ -201,6 +201,9 @@ select {
   margin-bottom: calc(12rem / 16);
 
   font-size: calc(11rem / 16);
+  text-align: center;
+  line-height: 1.6;
+
   color: hsl(246, 25%, 77%);
 }
 
@@ -312,6 +315,97 @@ select {
 .hidden {
   display: none;
 }
+
+/* MEDIA QUERIES */
+
+@media (max-width: 62em) {
+  .input input {
+    padding: calc(12rem / 16);
+  }
+
+  .input {
+    gap: calc(16rem / 16);
+  }
+
+  .btn {
+    margin-top: calc(14rem / 16);
+    margin-bottom: calc(14rem / 16);
+  }
+
+  .warning-text {
+    margin-bottom: calc(0rem / 16);
+
+    padding-right: calc(30rem / 16);
+    padding-left: calc(30rem / 16);
+  }
+
+  ::placeholder {
+    font-size: calc(12rem / 16);
+  }
+
+  .try-free {
+    padding: calc(20rem / 16) calc(20rem / 16);
+  }
+}
+
+@media (max-width: 53em) {
+  .container {
+    grid-template-columns: 1fr;
+  }
+
+  .left {
+    text-align: center;
+  }
+
+  .right {
+    max-width: calc(800rem / 16);
+
+    justify-self: center;
+  }
+
+  .heading {
+    font-size: calc(40rem / 16);
+  }
+}
+
+@media (max-width: 48em) {
+  .heading {
+    font-size: calc(30rem / 16);
+  }
+
+  .text {
+    font-size: calc(14rem / 16);
+  }
+}
+
+@media (max-width: 29em) {
+  .try-free-text {
+    font-size: calc(12rem / 16);
+  }
+
+  .input-box {
+    padding: calc(20rem / 16) calc(25rem / 16);
+  }
+
+  .input input {
+    padding: calc(8rem / 16);
+  }
+
+  .btn {
+    padding: calc(16rem / 16);
+
+    font-size: calc(12rem / 16);
+  }
+
+  ::placeholder {
+    font-size: calc(10rem / 16);
+  }
+
+  .warning-text {
+    font-size: calc(10rem / 16);
+  }
+}
+
 /*
 - Font sizes (px)
 10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
